@@ -22,68 +22,134 @@ Section 5.3
  
 5, 7, 13 – 35 odd, 41, 43, 47, 53, 55, 63 – 79 odd, 87.
 
-5. $\answer{-4}$
+5. The slope of a line is $-4$. What is the slope of any line parallel to this line?
 
-7. $\answer{-2/3}$
+$\answer{-4}$
 
-13. $\answer{-2}$
+7. The slope of a line is $\frac{3}{2}$. What is the slope of any line perpendicular
+  to this line?
 
-15. $\answer{1/3}$
+$\answer{-2/3}$
 
+13. \emph{Find the slope of the line containing the points $P_1$ and $P_2$.}\quad $P_1(4, 2)$, $P_2(3, 4)$
 
+$\answer{-2}$
 
-17. $\answer{-5/2}$
+15. \emph{Find the slope of the line containing the points $P_1$ and $P_2$.}\quad $P_1(-1, 3)$, $P_2(2, 4)$
 
-
-
-19. $\answer{-1/2}$
-
-
-
-21. $\answer{-1}$
+$\answer{1/3}$
 
 
-23. $\answer{undefined}$
+
+17. \emph{Find the slope of the line containing the points $P_1$ and $P_2$.}\quad $P_1(2, 4)$, $P_2(4, -1)$
+
+$\answer{-5/2}$
 
 
-25. $\answer{0}$
 
-27. $\answer{-1/3}$
+19. \emph{Find the slope of the line containing the points $P_1$ and $P_2$.}\quad $P_1(-2, 3)$, $P_2(2, 1)$
 
-29.  $\answer{0}$
+$\answer{-1/2}$
 
-31. $\answer{-5}$
 
-33. $\answer{undefined}$
 
-35.  $\answer{-2/3}$
+21. \emph{Find the slope of the line containing the points $P_1$ and $P_2$.}\quad $P_1(8, -3)$, $P_2(4, 1)$
+
+$\answer{-1}$
+
+
+23. \emph{Find the slope of the line containing the points $P_1$ and $P_2$.}\quad $P_1(3, -4)$, $P_2(3, 5)$
+
+$\answer{undefined}$
+
+
+25. \emph{Find the slope of the line containing the points $P_1$ and $P_2$.}\quad $P_1(4, -2)$, $P_2(3, -2)$
+
+$\answer{0}$
+
+27. \emph{Find the slope of the line containing the points $P_1$ and $P_2$.}\quad $P_1(0, -1)$, $P_2(3, -2)$
+
+$\answer{-1/3}$
+
+29. \emph{Find the slope of the line containing the points $P_1$ and $P_2$.}\quad $P_1(-2, 3)$, $P_2(1, 3)$
+
+$\answer{0}$
+
+31. \emph{Find the slope of the line containing the points $P_1$ and $P_2$.}\quad $P_1(-2, 4)$, $P_2(-1, -1)$
+
+$\answer{-5}$
+
+33. \emph{Find the slope of the line containing the points $P_1$ and $P_2$.}\quad $P_1(-2, -3)$, $P_2(-2, 1)$
+
+$\answer{undefined}$
+
+35. \emph{Find the slope of the line containing the points $P_1$ and $P_2$.}\quad $P_1(-1, 5)$, $P_2(5, 1)$
+
+$\answer{-2/3}$
 
 37. $\answer{4}$
 
-41. 
+41. Are the graphs of $y = \frac{3}{8}x - 5$ and $y = \frac{3}{8}x + 2$ parallel?
 
 \begin{multipleChoice}
 \choice[correct]{Yes.}
 \choice{No.}
 \end{multipleChoice}
 
-43. 
+43. Are the graphs of $y = \frac{7}{2}x$ and $y = -\frac{2}{7}x + 2$ perpendicular?
 
 \begin{multipleChoice}
 \choice[correct]{Yes.}
 \choice{No.}
 \end{multipleChoice}
 
-47. 
+47. Is the line containing the points $(-2, -3)$ and $(7, 1)$ parallel to the line
+  that contains the points $(6, -5)$ and $(4, 1)$?
 
 \begin{multipleChoice}
 \choice{Yes.}
 \choice[correct]{No.}
 \end{multipleChoice}
 
-53. $\answer{50}$
+53. \textbf{Postal Service} The graph below shows the work accomplished by an
+  electronic mail sorter. Find the slope of the line. Write a sentence that explains the
+  meaning of the slope.
+  \figbox{%
+  \begin{tikzpicture}[x=0.16cm,y=0.0032cm]
+    \draw[gridln] (0,0) grid[xstep=2.5,ystep=125] (22.5,1050);
+    \draw[axisln,-{Stealth[length=4pt]}] (0,0) -- (24,0) node[gl,right] {$x$};
+    \draw[axisln,-{Stealth[length=4pt]}] (0,0) -- (0,1120) node[gl,above] {$y$};
+    \foreach \v in {5,10,15,20} {\node[gl,below] at (\v,-10) {\v};}
+    \foreach \v in {250,500,750,1000} {\node[gl,left] at (-0.6,\v) {\v};}
+    \node[gl,left] at (-0.6,0) {0};
+    \draw[gline] (0,0) -- (21,1050);
+    \node[bdot] at (5,250) {};  \node[eqlbl,right=2pt] at (5,250) {$(5, 250)$};
+    \node[bdot] at (15,750) {}; \node[eqlbl,left=2pt] at (15,750) {$(15, 750)$};
+    \node[gl,below=10pt] at (11,-10) {Time (in minutes)};
+    \node[gl,rotate=90,align=center] at (-6.5,525) {Pieces of\\Mail Sorted};
+  \end{tikzpicture}}
 
-55. $\answer{-0.02}$
+$\answer{50}$
+
+55. \textbf{Fuel Consumption} The graph below shows how the amount of gasoline in the
+  tank of a car decreases as the car is driven at a constant speed of 60 mph. Find the
+  slope of the line. Write a sentence that states the meaning of the slope.
+  \figbox{%
+  \begin{tikzpicture}[x=0.016cm,y=0.16cm]
+    \draw[gridln] (0,0) grid[xstep=25,ystep=2.5] (225,22.5);
+    \draw[axisln,-{Stealth[length=4pt]}] (0,0) -- (245,0) node[gl,right] {$x$};
+    \draw[axisln,-{Stealth[length=4pt]}] (0,0) -- (0,24) node[gl,above] {$y$};
+    \foreach \v in {50,100,150,200} {\node[gl,below] at (\v,-0.2) {\v};}
+    \foreach \v in {5,10,15,20} {\node[gl,left] at (-6,\v) {\v};}
+    \node[gl,left] at (-6,0) {0};
+    \draw[gline] (0,20) -- (220,15.6);
+    \node[bdot] at (0,20) {};    \node[eqlbl,above right=1pt] at (0,20) {$(0, 20)$};
+    \node[bdot] at (200,16) {};  \node[eqlbl,above right=1pt] at (200,16) {$(200, 16)$};
+    \node[gl,below=10pt] at (110,-0.2) {Distance driven (in miles)};
+    \node[gl,rotate=90,align=center] at (-58,11) {Gas remaining\\in tank (in gallons)};
+  \end{tikzpicture}}
+
+$\answer{-0.02}$
 
 63. check work here:
 

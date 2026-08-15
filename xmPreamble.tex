@@ -8,8 +8,119 @@
 \usepackage{tikz}
 \usepackage{color}
 \usepackage{amsmath,amssymb,amsfonts}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{booktabs}
+\usetikzlibrary{arrows.meta,calc,positioning}
 
-%%
-%%  Example:
-%%
-% \newcommand{\R}{\mathbb{R}
+% ---------------------------------------------------------------------
+%  Support for the transcribed textbook problem statements.
+%  Colours, tikz styles and macros are taken from the Math1050-HW-Ch*.tex
+%  source files so that the figures render as the textbook draws them.
+%  \providecommand+\renewcommand avoids clashing with anything the ximera
+%  class already defines while still guaranteeing our definition wins.
+% ---------------------------------------------------------------------
+\definecolor{bookblue}{RGB}{79,168,219}
+\definecolor{fillblue}{RGB}{205,222,242}
+\definecolor{fillgreen}{RGB}{208,229,221}
+\definecolor{fillcream}{RGB}{252,240,212}
+\definecolor{piegreen}{RGB}{198,226,216}
+\definecolor{piegreenline}{RGB}{58,140,116}
+\definecolor{inkgray}{RGB}{45,45,45}
+\definecolor{newsblue}{RGB}{214,234,245}
+\definecolor{shadeblue}{RGB}{214,234,247}
+\definecolor{figlavender}{RGB}{237,227,240}
+\definecolor{figyellowgreen}{RGB}{233,235,148}
+\definecolor{figorange}{RGB}{248,217,152}
+
+\tikzset{
+  ray/.style     = {inkgray, line width=0.9pt, -{Stealth[length=5pt,width=4pt]}},
+  bothray/.style = {inkgray, line width=0.9pt,
+                    {Stealth[length=5pt,width=4pt]}-{Stealth[length=5pt,width=4pt]}},
+  edge/.style    = {inkgray, line width=0.9pt},
+  arc/.style     = {bookblue, line width=0.8pt},
+  dim/.style     = {bookblue, line width=0.8pt,
+                    {Stealth[length=4pt,width=3.2pt]}-{Stealth[length=4pt,width=3.2pt]}},
+  dimone/.style  = {bookblue, line width=0.8pt, -{Stealth[length=4pt,width=3.2pt]}},
+  dimln/.style   = {inkgray, line width=0.5pt},
+  tick/.style    = {bookblue, line width=0.8pt},
+  guide/.style   = {bookblue, line width=0.6pt, densely dashed},
+  lbl/.style     = {bookblue, font=\small},
+  ptlbl/.style   = {bookblue, font=\small\itshape},
+  linelbl/.style = {inkgray, font=\small\itshape},
+  pielbl/.style  = {inkgray, font=\small, align=center},
+  bdot/.style    = {circle, fill=bookblue, inner sep=0pt, minimum size=3.4pt},
+  gridln/.style  = {gray!35, line width=0.25pt},
+  axisln/.style  = {inkgray, line width=0.6pt},
+  gl/.style      = {inkgray, font=\tiny},
+  gline/.style   = {bookblue, line width=1.0pt,
+                    {Stealth[length=5pt]}-{Stealth[length=5pt]}},
+  gdash/.style   = {bookblue, line width=1.0pt, densely dashed,
+                    {Stealth[length=5pt]}-{Stealth[length=5pt]}},
+  eqlbl/.style   = {bookblue, font=\tiny},
+  leader/.style  = {bookblue, line width=0.5pt, -{Stealth[length=3pt]}},
+}
+
+\providecommand{\blank}{}\renewcommand{\blank}{\underline{\hspace{2.2em}}}
+\providecommand{\note}[1]{}\renewcommand{\note}[1]{{\small\itshape[#1]}}
+\providecommand{\figbox}[1]{}\renewcommand{\figbox}[1]{%
+  \leavevmode\par\nobreak\vspace{4pt}\nobreak\centerline{#1}\vspace{2pt}}
+\providecommand{\sys}[2]{}\renewcommand{\sys}[2]{$\begin{aligned}#1\\#2\end{aligned}$}
+
+% Blank coordinate grid for "Graph ..." exercises.
+\providecommand{\gridsm}{}\renewcommand{\gridsm}{%
+\begin{tikzpicture}[scale=0.28]
+  \draw[gridln] (-5,-5) grid (5,5);
+  \draw[axisln,-{Stealth[length=4pt]}] (-5.4,0) -- (5.4,0);
+  \draw[axisln,-{Stealth[length=4pt]}] (0,-5.4) -- (0,5.4);
+  \foreach \v in {-4,-2,2,4} {\node[gl] at (\v,-0.9) {$\v$};}
+  \foreach \v in {-4,-2,2,4} {\node[gl] at (-0.9,\v) {$\v$};}
+\end{tikzpicture}}
+
+\providecommand{\pt}[4]{}\renewcommand{\pt}[4]{%
+  \node[bdot] at (#1,#2) {}; \node[ptlbl,#4] at (#1,#2) {$#3$};}
+\providecommand{\gridpts}[1]{}\renewcommand{\gridpts}[1]{%
+\begin{tikzpicture}[scale=0.34]
+  \draw[gridln] (-5,-5) grid (5,5);
+  \draw[axisln,-{Stealth[length=4pt]}] (-5.4,0) -- (5.6,0) node[gl,right] {$x$};
+  \draw[axisln,-{Stealth[length=4pt]}] (0,-5.4) -- (0,5.6) node[gl,above] {$y$};
+  \foreach \v in {-4,-2,2,4} {\node[gl] at (\v,-0.85) {$\v$};}
+  \foreach \v in {-4,-2,2,4} {\node[gl] at (-0.85,\v) {$\v$};}
+  #1
+\end{tikzpicture}}
+
+% Grid with content drawn on it; the two-argument form draws a background
+% layer beneath the grid, for shaded half-planes.
+\providecommand{\gridboxbg}[2]{}\renewcommand{\gridboxbg}[2]{%
+\begin{tikzpicture}[scale=0.34]
+  #1
+  \draw[gridln] (-5,-5) grid (5,5);
+  \draw[axisln,-{Stealth[length=4pt]}] (-5.4,0) -- (5.7,0) node[gl,right] {$x$};
+  \draw[axisln,-{Stealth[length=4pt]}] (0,-5.4) -- (0,5.7) node[gl,above] {$y$};
+  \foreach \v in {-4,-2,2,4} {\node[gl,fill=white,inner sep=0.6pt] at (\v,-0.85) {$\v$};}
+  \foreach \v in {-4,-2,2,4} {\node[gl,fill=white,inner sep=0.6pt] at (-0.85,\v) {$\v$};}
+  #2
+\end{tikzpicture}}
+\providecommand{\gridbox}[1]{}\renewcommand{\gridbox}[1]{\gridboxbg{}{#1}}
+
+% Bare axes, no grid and no scale (the qualitative sketches in 5.3 #87).
+\providecommand{\axesbox}[1]{}\renewcommand{\axesbox}[1]{%
+\begin{tikzpicture}[scale=0.30]
+  \draw[axisln,{Stealth[length=4pt]}-{Stealth[length=4pt]}] (-5,0) -- (5.6,0)
+    node[gl,right] {$x$};
+  \draw[axisln,{Stealth[length=4pt]}-{Stealth[length=4pt]}] (0,-5) -- (0,5.6)
+    node[gl,above] {$y$};
+  #1
+\end{tikzpicture}}
+
+% "In the News" style clipping.
+\providecommand{\newsbox}[2]{}\renewcommand{\newsbox}[2]{%
+  \par\vspace{4pt}\noindent
+  \begin{minipage}{\linewidth}
+  \colorbox{newsblue}{\begin{minipage}{\dimexpr\linewidth-2\fboxsep}
+    \vspace{2pt}
+    {\small\textbf{In the News} --- \textbf{#1}}\par\vspace{2pt}
+    {\small #2}
+    \vspace{2pt}
+  \end{minipage}}
+  \end{minipage}\par\vspace{4pt}}

@@ -33,23 +33,148 @@ Section 4.2:
  
  27. Each side measures $\answer{12}$ in .  
  
- 31. $\answer{35}$ degrees
+ 31. \figbox{%
+  \begin{tikzpicture}[scale=0.68]
+    \coordinate (O) at (0,0);
+    \draw[ray] (O) -- (0:2.9);
+    \draw[ray] (O) -- (90:2.9);
+    \draw[ray] (O) -- (40:2.9);
+    \draw[edge] (0.40,0) -- (0.40,0.40) -- (0,0.40);
+    \draw[arc] (40:1.60) arc (40:90:1.60);
+    \draw[arc] (0:1.10) arc (0:40:1.10);
+    \node[lbl] at (66:2.15) {$x + 20^\circ$};
+    \node[lbl] at (19:1.50) {$x$};
+  \end{tikzpicture}}
+
+$\answer{35}$ degrees
  
- 33. $\answer{20}$ degrees 
+ 33. \figbox{%
+  \begin{tikzpicture}[scale=0.68]
+    \coordinate (O) at (0,0);
+    \draw[ray] (O) -- (0:2.9);
+    \draw[ray] (O) -- (90:2.9);
+    \draw[ray] (O) -- (70:2.9);
+    \draw[edge] (0.40,0) -- (0.40,0.40) -- (0,0.40);
+    \draw[arc] (70:1.10) arc (70:90:1.10);
+    \draw[arc] (0:1.55) arc (0:70:1.55);
+    \node[lbl] at (80:1.55) {$x$};
+    \node[lbl] at (33:2.10) {$3x + 10^\circ$};
+  \end{tikzpicture}}
+
+$\answer{20}$ degrees 
  
- 35. $\answer{53}$ degrees
+ 35. Find the measure of $\angle a$.
+  \figbox{%
+  \begin{tikzpicture}[scale=0.68]
+    \coordinate (O) at (0,0);
+    \draw[bothray] (-2.9,0) -- (2.9,0);
+    \node[linelbl,above left] at (2.9,0) {$\ell$};
+    \draw[ray] (O) -- (118:2.9);
+    \draw[arc] (180:0.95) arc (180:118:0.95);
+    \draw[arc] (0:1.45) arc (0:118:1.45);
+    \node[lbl] at (150:1.30) {$a$};
+    \node[lbl] at (60:1.85) {$127^\circ$};
+  \end{tikzpicture}}
+
+$\answer{53}$ degrees
  
- 37. $\answer{121}$ degrees
+ 37. Find the measure of $\angle a$.
+  \figbox{%
+  \begin{tikzpicture}[scale=0.68]
+    \coordinate (O) at (0,0);
+    \draw[ray] (O) -- (78:2.7);
+    \draw[ray] (O) -- (0:2.7);
+    \draw[ray] (O) -- (192:2.7);
+    \draw[arc] (78:1.05) arc (78:192:1.05);
+    \draw[arc] (0:1.50) arc (0:78:1.50);
+    \draw[arc] (192:1.50) arc (192:360:1.50);
+    \node[lbl] at (135:1.40) {$a$};
+    \node[lbl] at (38:2.10) {$67^\circ$};
+    \node[lbl] at (280:1.95) {$172^\circ$};
+  \end{tikzpicture}}
+
+$\answer{121}$ degrees
  
- 39. $\answer{15}$ degrees
+ 39. \figbox{%
+  \begin{tikzpicture}[scale=0.68]
+    \coordinate (O) at (0,0);
+    \draw[bothray] (-3.0,0) -- (3.0,0);
+    \node[linelbl,above left] at (3.0,0) {$\ell$};
+    \draw[ray] (O) -- (110:2.8);
+    \draw[ray] (O) -- (35:2.8);
+    \draw[arc] (180:1.05) arc (180:110:1.05);
+    \draw[arc] (110:1.45) arc (110:35:1.45);
+    \draw[arc] (35:1.05) arc (35:0:1.05);
+    \node[lbl] at (147:1.55) {$4x$};
+    \node[lbl] at (72:1.80) {$6x$};
+    \node[lbl] at (16:1.60) {$2x$};
+  \end{tikzpicture}}
+
+$\answer{15}$ degrees
  
- 41. $\answer{18}$ degrees
+ 41. \figbox{%
+  \begin{tikzpicture}[scale=0.68]
+    \coordinate (O) at (0,0);
+    \draw[bothray] (-3.0,0) -- (3.0,0);
+    \node[linelbl,above left] at (3.0,0) {$\ell$};
+    \draw[ray] (O) -- (125:2.8);
+    \draw[ray] (O) -- (65:2.8);
+    \draw[arc] (180:1.05) arc (180:125:1.05);
+    \draw[arc] (125:1.30) arc (125:65:1.30);
+    \draw[arc] (65:1.05) arc (65:0:1.05);
+    \node[lbl] at (153:1.55) {$3x$};
+    \node[lbl] at (95:2.20) {$x + 36^\circ$};
+    \node[lbl] at (31:1.55) {$4x$};
+  \end{tikzpicture}}
+
+$\answer{18}$ degrees
  
- 43. $\answer{45}$ degrees
+ 43. \figbox{%
+  \begin{tikzpicture}[scale=0.68]
+    \coordinate (O) at (0,0);
+    \draw[ray] (O) -- (90:2.7);
+    \draw[ray] (O) -- (40:2.7);
+    \draw[ray] (O) -- (-50:2.7);
+    \draw[ray] (O) -- (180:2.7);
+    \draw[arc] (90:1.05) arc (90:180:1.05);
+    \draw[arc] (40:1.05) arc (40:90:1.05);
+    \draw[arc] (-50:1.45) arc (-50:40:1.45);
+    \draw[arc] (180:1.45) arc (180:310:1.45);
+    \node[lbl] at (135:1.45) {$2x$};
+    \node[lbl] at (65:1.45) {$x$};
+    \node[lbl] at (-5:2.05) {$2x$};
+    \node[lbl] at (245:1.90) {$3x$};
+  \end{tikzpicture}}
+
+$\answer{45}$ degrees
  
- 45. $\answer{49}$ degrees
+ 45. \figbox{%
+  \begin{tikzpicture}[scale=0.68]
+    \draw[bothray] (-140:2.7) -- (40:2.7);
+    \draw[bothray] (140:2.7) -- (-40:2.7);
+    \node[linelbl,above right] at (40:2.7) {$m$};
+    \node[linelbl,below right] at (-40:2.7) {$n$};
+    \draw[arc] (40:1.05) arc (40:140:1.05);
+    \draw[arc] (-40:1.05) arc (-40:40:1.05);
+    \node[lbl] at (90:1.45) {$131^\circ$};
+    \node[lbl] at (0:1.70) {$x$};
+  \end{tikzpicture}}
+
+$\answer{49}$ degrees
  
- 47. $\answer{12}$ degrees
+ 47. \figbox{%
+  \begin{tikzpicture}[scale=0.68]
+    \draw[bothray] (-140:2.7) -- (40:2.7);
+    \draw[bothray] (140:2.7) -- (-40:2.7);
+    \node[linelbl,above right] at (40:2.7) {$m$};
+    \node[linelbl,below right] at (-40:2.7) {$n$};
+    \draw[arc] (140:1.05) arc (140:220:1.05);
+    \draw[arc] (-40:1.05) arc (-40:40:1.05);
+    \node[lbl] at (180:1.75) {$7x$};
+    \node[lbl] at (0:2.30) {$4x + 36^\circ$};
+  \end{tikzpicture}}
+
+$\answer{12}$ degrees
  
  49.  \begin{multipleChoice}
 \choice{True}
@@ -61,28 +186,145 @@ Section 4.2:
 \choice{False}
 \end{multipleChoice}
  
- 53. angle a is $\answer{122}$ degrees;  angle b is $\answer{58}$ degrees. 
+ 53. \figbox{%
+  \begin{tikzpicture}[scale=0.62]
+    \draw[bothray] (-2.3,1.2) -- (2.3,1.2);  \node[linelbl,right] at (2.3,1.2) {$\ell_1$};
+    \draw[bothray] (-2.3,-1.2) -- (2.3,-1.2);\node[linelbl,right] at (2.3,-1.2) {$\ell_2$};
+    \draw[bothray] (-1.9,2.1) -- (1.9,-2.1); \node[linelbl,below right] at (1.9,-2.1) {$t$};
+    \coordinate (P) at (-1.09,1.2);
+    \coordinate (Q) at (1.09,-1.2);
+    \draw[arc] ($(P)+(180:0.55)$) arc (180:312:0.55);
+    \node[lbl] at ($(P)+(244:0.85)$) {$122^\circ$};
+    \draw[arc] ($(Q)+(0:0.55)$) arc (0:132:0.55);
+    \node[lbl] at ($(Q)+(66:0.80)$) {$a$};
+    \draw[arc] ($(Q)+(312:0.55)$) arc (312:360:0.55);
+    \node[lbl] at ($(Q)+(336:0.85)$) {$b$};
+  \end{tikzpicture}}
+
+angle a is $\answer{122}$ degrees;  angle b is $\answer{58}$ degrees. 
  
- 55. angle a is $\answer{44}$ degrees;  angle b is $\answer{136}$ degrees. 
+ 55. \figbox{%
+  \begin{tikzpicture}[scale=0.62]
+    \draw[bothray] (-2.3,1.2) -- (2.3,1.2);  \node[linelbl,right] at (2.3,1.2) {$\ell_1$};
+    \draw[bothray] (-2.3,-1.2) -- (2.3,-1.2);\node[linelbl,right] at (2.3,-1.2) {$\ell_2$};
+    \draw[bothray] (-1.9,-2.1) -- (1.9,2.1); \node[linelbl,above right] at (1.9,2.1) {$t$};
+    \coordinate (P) at (1.09,1.2);
+    \coordinate (Q) at (-1.09,-1.2);
+    \draw[arc] ($(P)+(228:0.55)$) arc (228:360:0.55);
+    \node[lbl] at ($(P)+(294:0.88)$) {$136^\circ$};
+    \draw[arc] ($(Q)+(48:0.55)$) arc (48:180:0.55);
+    \node[lbl] at ($(Q)+(114:0.80)$) {$b$};
+    \draw[arc] ($(Q)+(0:0.55)$) arc (0:48:0.55);
+    \node[lbl] at ($(Q)+(24:0.85)$) {$a$};
+  \end{tikzpicture}}
+
+angle a is $\answer{44}$ degrees;  angle b is $\answer{136}$ degrees. 
  
  
- 59. $\answer{20}$ degrees
+ 59. \figbox{%
+  \begin{tikzpicture}[scale=0.62]
+    \draw[bothray] (-2.3,1.2) -- (2.3,1.2);  \node[linelbl,right] at (2.3,1.2) {$\ell_1$};
+    \draw[bothray] (-2.3,-1.2) -- (2.3,-1.2);\node[linelbl,right] at (2.3,-1.2) {$\ell_2$};
+    \draw[bothray] (-1.9,2.1) -- (1.9,-2.1); \node[linelbl,below right] at (1.9,-2.1) {$t$};
+    \coordinate (P) at (-1.09,1.2);
+    \coordinate (Q) at (1.09,-1.2);
+    \draw[arc] ($(P)+(312:0.55)$) arc (312:360:0.55);
+    \node[lbl] at ($(P)+(336:0.85)$) {$3x$};
+    \draw[arc] ($(Q)+(0:0.55)$) arc (0:132:0.55);
+    \node[lbl] at ($(Q)+(66:0.82)$) {$6x$};
+  \end{tikzpicture}}
+
+$\answer{20}$ degrees
  
- 61. $\answer{40}$ degrees
+ 61. \figbox{%
+  \begin{tikzpicture}[scale=0.62]
+    \draw[bothray] (-2.3,1.2) -- (2.3,1.2);  \node[linelbl,right] at (2.3,1.2) {$\ell_1$};
+    \draw[bothray] (-2.3,-1.2) -- (2.3,-1.2);\node[linelbl,right] at (2.3,-1.2) {$\ell_2$};
+    \draw[bothray] (-1.9,2.1) -- (1.9,-2.1); \node[linelbl,below right] at (1.9,-2.1) {$t$};
+    \coordinate (P) at (-1.09,1.2);
+    \coordinate (Q) at (1.09,-1.2);
+    \draw[arc] ($(P)+(0:0.55)$) arc (0:132:0.55);
+    \node[lbl] at ($(P)+(58:0.85)$) {$3x$};
+    \draw[arc] ($(Q)+(132:0.55)$) arc (132:180:0.55);
+    \node[lbl] at ($(Q)+(156:0.98)$) {$x + 20^\circ$};
+  \end{tikzpicture}}
+
+$\answer{40}$ degrees
  
  
  
- 65. angle x is $\answer{155}$ degrees; angle y is $\answer{70}$ degrees. 
+ 65. Given that $\angle a = 95^\circ$ and $\angle b = 70^\circ$, find the measures of
+  angles $x$ and $y$.
+  \figbox{%
+  \begin{tikzpicture}[scale=0.85]
+    % vertical line
+    \draw[bothray] (0,-1.8) -- (0,2.1);
+    % line through (0,1.1), slope -0.35
+    \draw[bothray] (-2.3,1.905) -- (2.9,0.085);
+    % line through (0,-0.6), slope 0.55
+    \draw[bothray] (-2.3,-1.865) -- (2.9,0.995);
+    \node[lbl] at (0.36,1.42) {$a$};
+    \node[lbl] at (0.40,-0.26) {$b$};
+    \node[lbl] at (-0.38,-1.02) {$y$};
+    \node[lbl] at (2.02,0.10) {$x$};
+    \draw[arc] (0.30,1.10) arc (0:-19:0.30);
+    \draw[arc] (0.30,-0.60) arc (0:29:0.30);
+    \draw[arc] (-0.30,-0.60) arc (180:209:0.30);
+    \draw[arc] ($(1.889,0.439)+(209:0.30)$) arc (209:341:0.30);
+  \end{tikzpicture}}
+
+angle x is $\answer{155}$ degrees; angle y is $\answer{70}$ degrees. 
  
- 67. angle a is $\answer{45}$ degrees;  angle b is $\answer{135}$ degrees. 
+ 67. Given that $\angle y = 45^\circ$, find the measures of angles $a$ and $b$.
+  \figbox{%
+  \begin{tikzpicture}[scale=0.85]
+    \draw[bothray] (0,-2.6) -- (0,1.9);           % vertical
+    \draw[bothray] (-2.1,0.9) -- (2.7,0.9);       % horizontal
+    \draw[edge] (0,0.58) -- (0.32,0.58) -- (0.32,0.9);
+    \draw[bothray] (-1.5,-2.5) -- (2.6,1.6);      % diagonal, y = x - 1
+    \node[lbl] at (0.34,-0.52) {$a$};
+    \node[lbl] at (-0.36,-1.52) {$y$};
+    \node[lbl] at (2.22,0.62) {$b$};
+    \draw[arc] (0,-0.68) arc (90:45:0.32);
+    \draw[arc] (0,-1.32) arc (270:225:0.32);
+    \draw[arc] (2.22,0.9) arc (0:45:0.32);
+  \end{tikzpicture}}
+
+angle a is $\answer{45}$ degrees;  angle b is $\answer{135}$ degrees. 
  
- 69. $\answer{90-x}$ degrees
+ 69. Given that $AO \perp OB$, express in terms of $x$ the number of degrees in
+  $\angle BOC$.
+  \figbox{%
+  \begin{tikzpicture}[scale=0.85]
+    \coordinate (O) at (0,0);
+    \draw[bothray] (-2.4,0) -- (2.8,0);
+    \node[linelbl,above left] at (2.8,0) {$\ell$};
+    \draw[ray] (O) -- (135:2.3);
+    \draw[ray] (O) -- (62:2.3);
+    \node[bdot] (A) at (135:1.7) {}; \node[ptlbl,above left=-1pt] at (A) {$A$};
+    \node[bdot] (B) at (62:1.7) {};  \node[ptlbl,above right=-1pt] at (B) {$B$};
+    \node[bdot] (C) at (1.8,0) {};   \node[ptlbl,below=2pt] at (C) {$C$};
+    \node[bdot] (Oc) at (0,0) {};    \node[ptlbl,below=2pt] at (Oc) {$O$};
+    \draw[arc] (180:0.62) arc (180:135:0.62);
+    \node[lbl] at (157:0.92) {$x$};
+  \end{tikzpicture}}
+
+$\answer{90-x}$ degrees
  
- 71. $\answer{60}$ degrees
+ 71. One angle in a triangle is a right angle, and one angle measures $30^\circ$. What
+  is the measure of the third angle?
+
+$\answer{60}$ degrees
  
- 73. $\answer{35}$ degrees
+ 73. Two angles of a triangle measure $42^\circ$ and $103^\circ$. Find the measure of
+  the third angle.
+
+$\answer{35}$ degrees
  
- 75. $\answer{102}$ degrees 
+ 75. A triangle has a $13^\circ$ angle and a $65^\circ$ angle. What is the measure of
+  the third angle?
+
+$\answer{102}$ degrees 
  
  77. The smaller angle is $\answer{36}$ degrees, and the larger angle is $\answer{108}$ degrees.
  
