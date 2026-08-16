@@ -114,13 +114,14 @@
 \end{tikzpicture}}
 
 % "In the News" style clipping.
+% The textbook prints this as a shaded box. The shaded version used
+% \colorbox around a minipage sized with \dimexpr\linewidth-2\fboxsep, which
+% tex4ht cannot evaluate ("Missing number, treated as zero" / "Illegal unit of
+% measure"), so the clipping is set as an indented quotation instead.
 \providecommand{\newsbox}[2]{}\renewcommand{\newsbox}[2]{%
-  \par\vspace{4pt}\noindent
-  \begin{minipage}{\linewidth}
-  \colorbox{newsblue}{\begin{minipage}{\dimexpr\linewidth-2\fboxsep}
-    \vspace{2pt}
-    {\small\textbf{In the News} --- \textbf{#1}}\par\vspace{2pt}
+  \par\vspace{4pt}
+  \begin{quote}
+    {\small\textbf{In the News: #1}}\par\vspace{2pt}
     {\small #2}
-    \vspace{2pt}
-  \end{minipage}}
-  \end{minipage}\par\vspace{4pt}}
+  \end{quote}
+  \vspace{4pt}}
