@@ -1,0 +1,259 @@
+\documentclass{ximera}
+\author{Jeffrey Kuan}
+\title{Math 1050 HW 3.2 --- Applications of Equations of the Form $ax = b$}
+\license{CC: 0}
+
+\begin{document}
+
+\begin{abstract}
+    Section 3.2 --- Applications of Equations of the Form $ax = b$.
+    Assigned exercises: 7–83 odd.
+\end{abstract}
+
+\maketitle
+
+\begin{problem}
+\textbf{7.} 12 is what percent of 50?
+\end{problem}
+
+\begin{problem}
+\textbf{9.} \emph{Solve.}\quad Find 18\% of 40.
+\end{problem}
+
+\begin{problem}
+\textbf{11.} 12\% of what is 48?
+\end{problem}
+
+\begin{problem}
+\textbf{13.} What is $33\frac{1}{3}\%$ of 27?
+\end{problem}
+
+\begin{problem}
+\textbf{15.} What percent of 12 is 3?
+\end{problem}
+
+\begin{problem}
+\textbf{17.} 60\% of what is 3?
+\end{problem}
+
+\begin{problem}
+\textbf{19.} 12 is what percent of 6?
+\end{problem}
+
+\begin{problem}
+\textbf{21.} $5\frac{1}{4}\%$ of what is 21?
+\end{problem}
+
+\begin{problem}
+\textbf{23.} \emph{Solve.}\quad Find 15.4\% of 50.
+\end{problem}
+
+\begin{problem}
+\textbf{25.} 1 is 0.5\% of what?
+\end{problem}
+
+\begin{problem}
+\textbf{27.} $\frac{3}{4}\%$ of what is 3?
+\end{problem}
+
+\begin{problem}
+\textbf{29.} \emph{Solve.}\quad Find 125\% of 16.
+\end{problem}
+
+\begin{problem}
+\textbf{31.} 16.4 is what percent of 20.4? Round to the nearest percent.
+\end{problem}
+
+\begin{problem}
+\textbf{33.} Without solving an equation, determine whether 40\% of 80 is less than, equal to,
+  or greater than 80\% of 40.
+\end{problem}
+
+\begin{problem}
+\textbf{35.} \textbf{Problem Situation:} It rained on 24 of the 30 days of June. What percent
+  of the days in June were rainy days?
+  \\[2pt]
+  \hspace*{1.5em}Using the formula $PB = A$, $P = \blank$, $B = \blank$, and
+  $A = \blank$.
+\end{problem}
+
+\begin{problem}
+\textbf{37.} \textbf{Stadiums} The Arthur Ashe Tennis Stadium in New York has a seating
+  capacity of 22,500 people. Of these seats, 1.11\% are wheelchair-accessible seats.
+  How many seats in the stadium are wheelchair accessible? Round to the nearest whole
+  number.
+\end{problem}
+
+\begin{problem}
+\textbf{39.} \textbf{Natural Resources} On average, a person uses 13.2 gal of water per day
+  for showering. This is 17.8\% of the total amount of water used per person per day in
+  the average single-family home. Find the total amount of water used per person per
+  day in the average single-family home. Round to the nearest whole number.
+  \emph{(Source: American Water Works Association)}
+\end{problem}
+
+\begin{problem}
+\textbf{41.} \textbf{The Internet} The graph at the right shows the responses to a Yahoo!
+  survey that asked people how many hours per week they typically spend online. How
+  many people were surveyed?
+  \figbox{%
+  \begin{tikzpicture}[scale=1]
+    % "Hours per Week Spent Online" -- 0-5 h 28%, 5-20 h 17%, >20 h 55%.
+    % Wedges laid out clockwise from 0 degrees, matching the printed figure.
+    \def\R{1.75}
+    \fill[piegreen, draw=piegreenline, line width=0.7pt]
+      (0,0) -- (0:\R) arc (0:100.8:\R) -- cycle;          % 0-5 h  (28%)
+    \fill[piegreen, draw=piegreenline, line width=0.7pt]
+      (0,0) -- (100.8:\R) arc (100.8:162:\R) -- cycle;     % 5-20 h (17%)
+    \fill[piegreen, draw=piegreenline, line width=0.7pt]
+      (0,0) -- (162:\R) arc (162:360:\R) -- cycle;         % >20 h  (55%)
+    \node[pielbl] at (52:1.02) {0-5 h\\28\%};
+    \node[pielbl] at (130:1.18) {5-20 h\\17\%};
+    \node[pielbl] at (261:0.95) {More than 20 h\\55\%};
+    \node[pielbl, below=6pt] at (0,-\R) {Hours per Week Spent Online};
+  \end{tikzpicture}}
+  \noindent\note{As printed, the graph gives percentages only, so the number surveyed
+        cannot be determined from it --- see the note at the end of this file.}
+\end{problem}
+
+\begin{problem}
+\textbf{43.} \textbf{Safety} Recently, the National Safety Council collected data on the
+  leading causes of accidental death. The findings revealed that for people age 20,
+  30 died from a fall, 47 from fire, 200 from drowning, and 1950 from motor vehicle
+  accidents. What percent of the accidental deaths were not attributed to motor vehicle
+  accidents? Round to the nearest percent.
+\end{problem}
+
+\begin{problem}
+\textbf{45.} \textbf{Energy} The Energy Information Administration reports that if every U.S.
+  household switched 4 h of lighting per day from incandescent bulbs to compact
+  fluorescent bulbs, we would save 31.7 billion kilowatt-hours of electricity a year,
+  or 33\% of the total electricity used for home lighting. What is the total electricity
+  used for home lighting in this country? Round to the nearest tenth of a billion.
+\end{problem}
+
+\begin{problem}
+\textbf{47.} \textbf{Super Bowl} According to the Associated Press, 106.5 million people
+  watched Super Bowl XLIV. What percent of the U.S. population watched Super Bowl XLIV?
+  Use a figure of 310 million for the U.S. population. Round to the nearest tenth of a
+  percent.
+\end{problem}
+
+\begin{problem}
+\textbf{49.} \textbf{Consumerism} A 20-horsepower hydrostatic lawn tractor sells for
+  \$1579.99. This is 11\% more than the price of the same lawn tractor with a standard
+  transmission. What is the price of the less expensive model? Round to the nearest
+  cent.
+\end{problem}
+
+\begin{problem}
+\textbf{51.} \textbf{Investment} Kachina Caron invests \$1200 in a simple interest account and
+  earns \$72 in 8 months. What is the annual simple interest rate?
+\end{problem}
+
+\begin{problem}
+\textbf{53.} \textbf{Investment} Sal Boxer divided a gift of \$3000 into two different
+  accounts. He placed \$1000 in one account that earned an annual simple interest rate
+  of 7.5\%. The remaining money was placed in an account that earned an annual simple
+  interest rate of 8.25\%. How much interest did Sal earn from the two accounts after
+  one year?
+\end{problem}
+
+\begin{problem}
+\textbf{55.} \textbf{Investment} Makana invested \$900 in an account that earned an annual
+  simple interest rate that was 1\% higher than the rate her friend Marlys earned on her
+  investment. If Marlys earned \$51 after one year from an investment of \$850, how much
+  did Makana earn after one year?
+\end{problem}
+
+\begin{problem}
+\textbf{57.} \textbf{Investment} An investor places \$1000 in an account that earns 9\% annual
+  simple interest and \$1000 in an account that earns 6\% annual simple interest. If
+  each investment is left in the account for the same period of time, is the interest
+  rate on the combined investment less than 6\%, between 6\% and 9\%, or greater
+  than 9\%?
+\end{problem}
+
+\begin{problem}
+\textbf{59.} \textbf{Mixture Problem} A 250-milliliter solution of a fabric dye contains 5 ml
+  of hydrogen peroxide. What is the percent concentration of the hydrogen peroxide?
+\end{problem}
+
+\begin{problem}
+\textbf{61.} \textbf{Mixture Problem} Apple Dan's 32-ounce apple-flavored fruit drink contains
+  8 oz of apple juice. Forty ounces of a generic brand of apple-flavored fruit drink
+  contains 9 oz of apple juice. Which of the two brands has the greater concentration of
+  apple juice?
+\end{problem}
+
+\begin{problem}
+\textbf{63.} \textbf{Mixture Problem} A pharmacist has 50 g of a topical cream that contains
+  75\% glycerin. How many grams of the cream are not glycerin?
+\end{problem}
+
+\begin{problem}
+\textbf{65.} \textbf{Mixture Problem} A 500-gram salt and water solution contains 50 g of
+  salt. This mixture is left in the open air and 100 g of water evaporates from the
+  solution. What is the percent concentration of salt in the remaining solution?
+\end{problem}
+
+\begin{problem}
+\textbf{67.} A car that travels 10 mi in 30 min is traveling at a rate of \blank{} miles per
+  hour.
+\end{problem}
+
+\begin{problem}
+\textbf{69.} A plane flies at a rate of 325 mph in calm air. The wind is blowing at 30 mph.
+  Flying with the wind, the plane travels \blank{} mph. Flying against the wind, the
+  plane travels \blank{} mph.
+\end{problem}
+
+\begin{problem}
+\textbf{71.} Morgan and Emma ride their bikes from Morgan's house to the store. Morgan begins
+  biking 5 min before Emma begins. Emma bikes faster than Morgan and catches up with her
+  just as they reach the store.
+  \begin{enumerate}[label=\textbf{\alph*.},leftmargin=2em,topsep=2pt,itemsep=1pt]
+    \item Is the distance biked by Emma less than, equal to, or greater than the
+          distance biked by Morgan?
+    \item Is the time spent biking by Emma less than, equal to, or greater than the time
+          spent biking by Morgan?
+  \end{enumerate}
+\end{problem}
+
+\begin{problem}
+\textbf{73.} A train travels at 45 mph for 3 h and then increases its speed to 55 mph for 2
+  more hours. How far does the train travel in the 5-hour period?
+\end{problem}
+
+\begin{problem}
+\textbf{75.} It takes a hospital dietician 40 min to drive from home to the hospital, a
+  distance of 20 mi. What is the dietician's average rate of speed?
+\end{problem}
+
+\begin{problem}
+\textbf{77.} The Ride for Health Bicycle Club has chosen a 36-mile course for this Saturday's
+  ride. If the riders plan on averaging 12 mph while they are riding and they have a
+  1-hour lunch break planned, how long will it take them to complete the trip?
+\end{problem}
+
+\begin{problem}
+\textbf{79.} A shopping mall has a moving sidewalk that takes shoppers from the shopping area
+  to the parking garage, a distance of 250 ft. If your normal walking rate is 5 ft/s and
+  the moving sidewalk is traveling at 3 ft/s, how many seconds would it take you to walk
+  on the moving sidewalk from the parking garage to the shopping area?
+\end{problem}
+
+\begin{problem}
+\textbf{81.} Two joggers start at the same time from opposite ends of an 8-mile jogging trail
+  and begin running toward each other. One jogger is running at a rate of 5 mph, and the
+  other jogger is running at a rate of 7 mph. How long, in minutes, after they start will
+  the two joggers meet?
+\end{problem}
+
+\begin{problem}
+\textbf{83.} Two cyclists start from the same point at the same time and move in opposite
+  directions. One cyclist is traveling at 8 mph, and the other cyclist is traveling at
+  9 mph. After 30 min, how far apart are the two cyclists?
+\end{problem}
+
+\end{document}
