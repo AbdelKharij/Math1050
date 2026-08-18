@@ -298,21 +298,26 @@ $\answer{40}$ degrees
 \textbf{65.} Given that $\angle a = 95^\circ$ and $\angle b = 70^\circ$, find the measures of
   angles $x$ and $y$.
   \figbox{%
-  \begin{tikzpicture}[scale=0.85]
-    % vertical line
+  \begin{tikzpicture}[scale=0.95]
+    % three lines: a vertical, and two transversals meeting it
     \draw[bothray] (0,-1.8) -- (0,2.1);
-    % line through (0,1.1), slope -0.35
-    \draw[bothray] (-2.3,1.905) -- (2.9,0.085);
-    % line through (0,-0.6), slope 0.55
-    \draw[bothray] (-2.3,-1.865) -- (2.9,0.995);
-    \node[lbl] at (0.36,1.42) {$a$};
-    \node[lbl] at (0.40,-0.26) {$b$};
-    \node[lbl] at (-0.38,-1.02) {$y$};
-    \node[lbl] at (2.02,0.10) {$x$};
-    \draw[arc] (0.30,1.10) arc (0:-19:0.30);
-    \draw[arc] (0.30,-0.60) arc (0:29:0.30);
-    \draw[arc] (-0.30,-0.60) arc (180:209:0.30);
-    \draw[arc] ($(1.889,0.439)+(209:0.30)$) arc (209:341:0.30);
+    \draw[bothray] (-2.3,1.905) -- (2.9,0.085);   % through (0,1.1), slope -0.35
+    \draw[bothray] (-2.3,-1.865) -- (2.9,0.995);  % through (0,-0.6), slope  0.55
+    \coordinate (T) at (0,1.1);
+    \coordinate (B) at (0,-0.6);
+    \coordinate (R) at (1.889,0.439);
+    % angle a: at T, between the upward vertical and the line going down-right
+    \draw[arc] ($(T)+(340.71:0.48)$) arc (340.71:450:0.48);
+    \node[lbl] at ($(T)+(35.4:0.72)$) {$a$};
+    % angle b: at B, between the upward vertical and the line going up-right
+    \draw[arc] ($(B)+(28.81:0.48)$) arc (28.81:90:0.48);
+    \node[lbl] at ($(B)+(59.4:0.72)$) {$b$};
+    % angle y: at B, vertical to b
+    \draw[arc] ($(B)+(208.81:0.48)$) arc (208.81:270:0.48);
+    \node[lbl] at ($(B)+(239.4:0.72)$) {$y$};
+    % angle x: at R, between the two transversals, opening downward
+    \draw[arc] ($(R)+(208.81:0.48)$) arc (208.81:340.71:0.48);
+    \node[lbl] at ($(R)+(274.8:0.74)$) {$x$};
   \end{tikzpicture}}
 
 angle x is $\answer{155}$ degrees; angle y is $\answer{70}$ degrees.

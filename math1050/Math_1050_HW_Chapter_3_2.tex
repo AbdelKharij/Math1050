@@ -93,30 +93,6 @@
 \end{problem}
 
 \begin{problem}
-\textbf{41.} \textbf{The Internet} The graph at the right shows the responses to a Yahoo!
-  survey that asked people how many hours per week they typically spend online. How
-  many people were surveyed?
-  \figbox{%
-  \begin{tikzpicture}[scale=1]
-    % "Hours per Week Spent Online" -- 0-5 h 28%, 5-20 h 17%, >20 h 55%.
-    % Wedges laid out clockwise from 0 degrees, matching the printed figure.
-    \def\R{1.75}
-    \fill[piegreen, draw=piegreenline, line width=0.7pt]
-      (0,0) -- (0:\R) arc (0:100.8:\R) -- cycle;          % 0-5 h  (28%)
-    \fill[piegreen, draw=piegreenline, line width=0.7pt]
-      (0,0) -- (100.8:\R) arc (100.8:162:\R) -- cycle;     % 5-20 h (17%)
-    \fill[piegreen, draw=piegreenline, line width=0.7pt]
-      (0,0) -- (162:\R) arc (162:360:\R) -- cycle;         % >20 h  (55%)
-    \node[pielbl] at (52:1.02) {0-5 h\\28\%};
-    \node[pielbl] at (130:1.18) {5-20 h\\17\%};
-    \node[pielbl] at (261:0.95) {More than 20 h\\55\%};
-    \node[pielbl, below=6pt] at (0,-\R) {Hours per Week Spent Online};
-  \end{tikzpicture}}
-  \noindent\note{As printed, the graph gives percentages only, so the number surveyed
-        cannot be determined from it --- see the note at the end of this file.}
-\end{problem}
-
-\begin{problem}
 \textbf{43.} \textbf{Safety} Recently, the National Safety Council collected data on the
   leading causes of accidental death. The findings revealed that for people age 20,
   30 died from a fall, 47 from fire, 200 from drowning, and 1950 from motor vehicle

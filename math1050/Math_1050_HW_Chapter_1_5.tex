@@ -183,9 +183,11 @@
     \draw[tick] (-22,0)  -- (-8,0);
     \draw[tick] (-22,80) -- (-8,80);
     \node[lbl,left] at (-17,40) {$80$ m};
-    % horizontal 80 m, spanning the inner square
-    \draw[dim] (5,62) -- (75,62);
-    \node[lbl,above] at (40,62) {$80$ m};
+    % horizontal 80 m, spanning the outer square so it matches the vertical one
+    \draw[dim]  (0,92) -- (80,92);
+    \draw[tick] (0,85) -- (0,99);
+    \draw[tick] (80,85) -- (80,99);
+    \node[lbl,above] at (40,92) {$80$ m};
     % 5 m band width, right-hand side
     \draw[dimone] (57,40) -- (75,40);
     \draw[dimone] (92,40) -- (80,40);
