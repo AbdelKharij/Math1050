@@ -326,17 +326,22 @@ angle x is $\answer{155}$ degrees; angle y is $\answer{70}$ degrees.
 \begin{problem}
 \textbf{67.} Given that $\angle y = 45^\circ$, find the measures of angles $a$ and $b$.
   \figbox{%
-  \begin{tikzpicture}[scale=0.85]
-    \draw[bothray] (0,-2.6) -- (0,1.9);           % vertical
-    \draw[bothray] (-2.1,0.9) -- (2.7,0.9);       % horizontal
+  \begin{tikzpicture}[scale=1.0]
+    \draw[bothray] (0,-2.6) -- (0,1.9);
+    \draw[bothray] (-2.1,0.9) -- (2.7,0.9);
     \draw[edge] (0,0.58) -- (0.32,0.58) -- (0.32,0.9);
-    \draw[bothray] (-1.5,-2.5) -- (2.6,1.6);      % diagonal, y = x - 1
-    \node[lbl] at (0.34,-0.52) {$a$};
-    \node[lbl] at (-0.36,-1.52) {$y$};
-    \node[lbl] at (2.22,0.62) {$b$};
-    \draw[arc] (0,-0.68) arc (90:45:0.32);
-    \draw[arc] (0,-1.32) arc (270:225:0.32);
-    \draw[arc] (2.22,0.9) arc (0:45:0.32);
+    \draw[bothray] (-1.5,-2.5) -- (2.6,1.6);
+    \coordinate (P) at (0,-1);      % vertical meets the diagonal
+    \coordinate (Q) at (1.9,0.9);   % horizontal meets the diagonal
+    % angle a: between the upward vertical and the diagonal
+    \draw[arc] ($(P)+(45:0.58)$) arc (45:90:0.58);
+    \node[lbl] at ($(P)+(67:0.85)$) {$a$};
+    % angle y: vertical to a, below
+    \draw[arc] ($(P)+(225:0.58)$) arc (225:270:0.58);
+    \node[lbl] at ($(P)+(247:0.85)$) {$y$};
+    % angle b: below the horizontal, between the diagonal and the ray to the right
+    \draw[arc] ($(Q)+(225:0.58)$) arc (225:360:0.58);
+    \node[lbl] at ($(Q)+(292:0.86)$) {$b$};
   \end{tikzpicture}}
 
 angle a is $\answer{45}$ degrees;  angle b is $\answer{135}$ degrees.

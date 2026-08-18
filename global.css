@@ -217,3 +217,75 @@ e.g. use "P1", "Problem 1", "Prob 1", "Exciting Problem 1", etc.
 .outcomeHead:hover + .outcomeContent {
 	display: block;
 } */
+
+/* =====================================================================
+   Math 1050: breathing room.
+
+   The pages are long lists of numbered problems, each with a statement,
+   often a figure, and an answer box. Without extra spacing the items run
+   together and it is hard to see where one problem ends and the next
+   begins. These rules separate the problems, give figures and answer
+   boxes room, and open up the line spacing for the prose.
+   ===================================================================== */
+
+.problem-environment {
+	margin: 2.1em 0;
+	padding: 0.9em 1.15em;
+	border-left: 3px solid #e3e7ee;
+	border-radius: 3px;
+}
+
+.problem-environment + .problem-environment {
+	margin-top: 2.4em;
+}
+
+.problem-environment::before {
+	display: block;
+	margin-bottom: 0.55em;
+}
+
+/* prose that is easier on the eye over a long page */
+.problem-environment p,
+.abstract p {
+	line-height: 1.65;
+	margin: 0.75em 0;
+}
+
+/* figures should not touch the text above or below them */
+.problem-environment img,
+.image-environment,
+figure {
+	display: block;
+	margin: 1.4em auto;
+}
+
+/* answer boxes need room so they read as separate from the statement */
+input.answer-input,
+.answer input,
+input[type="text"] {
+	margin: 0.35em 0.3em;
+	padding: 0.3em 0.45em;
+}
+
+/* section headings inside an activity */
+h2, h3, h4 {
+	margin-top: 1.9em;
+	margin-bottom: 0.7em;
+}
+
+/* the assignment list in each abstract */
+.abstract {
+	margin-bottom: 2.2em;
+	line-height: 1.6;
+}
+
+/* displayed equations */
+.displaymath, .equation, .align {
+	margin: 1.15em 0;
+}
+
+/* multiple-choice options should not stack tightly */
+.multiple-choice li,
+ul.multiple-choice > li {
+	margin: 0.45em 0;
+}
