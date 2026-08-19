@@ -193,9 +193,6 @@
 
 \begin{problem}
 \textbf{22.} Find the supplement of a $106^{\circ}$ angle.
-\begin{image}
-\includegraphics{10aff6ea-5599-4d61-9876-3e0c025ba08d-4_57_117_648_432}
-\end{image}
 
 \textbf{Answer:} $\answer{74}$
 
@@ -206,9 +203,18 @@
 
 \begin{problem}
 \textbf{23.} In the figure below, $AOB$ is a straight angle. Find $m\angle COB$.
-\begin{image}
-\includegraphics{10aff6ea-5599-4d61-9876-3e0c025ba08d-4_355_944_1055_239}
-\end{image}
+\figbox{\begin{tikzpicture}[scale=1.05]
+  \draw[bothray] (-2.6,0) -- (2.6,0);
+  \node[bdot] at (-2.1,0) {}; \node[ptlbl,below] at (-2.1,-0.05) {A};
+  \node[bdot] at (0,0)    {}; \node[ptlbl,below] at (0,-0.05)    {O};
+  \node[bdot] at (2.1,0)  {}; \node[ptlbl,below] at (2.1,-0.05)  {B};
+  \draw[ray] (0,0) -- (101:2.5);
+  \node[bdot] at (101:1.9) {}; \node[ptlbl,left] at (101:1.95) {C};
+  \draw[arc] (0.85,0) arc (0:101:0.85);
+  \node[lbl] at (50:1.15) {$?$};
+  \draw[arc] (180:0.55) arc (180:101:0.55);
+  \node[lbl] at (140:0.85) {$79^{\circ}$};
+\end{tikzpicture}}
 
 \textbf{Answer:} $\answer{101}$ degrees
 
@@ -245,9 +251,14 @@
 
 \begin{problem}
 \textbf{26.} Find the measure of $\angle A$.
-\begin{image}
-\includegraphics{10aff6ea-5599-4d61-9876-3e0c025ba08d-5_330_580_1123_216}
-\end{image}
+\figbox{\begin{tikzpicture}[scale=1.05]
+  \draw[ray] (0,0) -- (0:2.6);
+  \draw[ray] (0,0) -- (211:2.6);
+  \node[bdot] at (0,0) {};
+  \node[ptlbl,below right] at (0.05,-0.12) {A};
+  \draw[arc] (0.7,0) arc (0:211:0.7);
+  \node[lbl] at (105:1.05) {$211^{\circ}$};
+\end{tikzpicture}}
 
 \textbf{Answer:} $\answer{149}$ degrees
 
@@ -381,9 +392,16 @@
 (a) $\angle DBC$ \qquad \textbf{Answer:} $\answer{115}$ degrees
 
 (b) $\angle ABC$ \qquad \textbf{Answer:} $\answer{135}$ degrees
-\begin{image}
-\includegraphics{10aff6ea-5599-4d61-9876-3e0c025ba08d-8_569_549_785_259}
-\end{image}
+\figbox{\begin{tikzpicture}[scale=1.05]
+  \draw[ray] (0,0) -- (0:2.6);   \node[bdot] at (0:2.2)   {}; \node[ptlbl,above] at (0:2.2)   {A};
+  \draw[ray] (0,0) -- (110:2.7); \node[bdot] at (110:2.3) {}; \node[ptlbl,above] at (110:2.45) {D};
+  \draw[ray] (0,0) -- (225:2.7); \node[bdot] at (225:2.3) {}; \node[ptlbl,below left] at (225:2.4) {C};
+  \node[bdot] at (0,0) {}; \node[ptlbl,below right] at (0.08,-0.08) {B};
+  \draw[arc] (1.35,0) arc (0:110:1.35);
+  \node[lbl] at (55:1.65) {$110^{\circ}$};
+  \draw[arc] (0.75,0) arc (0:225:0.75);
+  \node[lbl] at (200:1.15) {$225^{\circ}$};
+\end{tikzpicture}}
 \begin{hint}
 \textbf{Solution.} $225-110=115^{\circ}$ and $360-225=135^{\circ}$.
 \end{hint}
@@ -391,9 +409,14 @@
 
 \begin{problem}
 \textbf{5.} Find the perimeter and area of the figure below.
-\begin{image}
-\includegraphics{10aff6ea-5599-4d61-9876-3e0c025ba08d-8_552_540_1712_256}
-\end{image}
+\figbox{\begin{tikzpicture}[x=0.062cm,y=0.062cm]
+  \draw[edge] (0,0) -- (18,0) -- (18,16) -- (60,16) -- (60,28) -- (0,28) -- cycle;
+  \node[linelbl,below] at (9,-1)    {18 ft};
+  \node[linelbl,left]  at (-1,14)   {28 ft};
+  \node[linelbl,above] at (30,29)   {60 ft};
+  \node[linelbl,right] at (61,22)   {12 ft};
+  \node[linelbl,right] at (19,8)    {16 ft};
+\end{tikzpicture}}
 
 \textbf{Answer:} perimeter $\answer{176}$ ft and area $\answer{1008}$ ft$^{2}$
 \end{problem}

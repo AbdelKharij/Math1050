@@ -59,9 +59,6 @@ your work in order to obtain any partial credit.
 
 \begin{hint}
 \textbf{Solution.} Division by zero is undefined.
-\begin{image}
-\includegraphics{70708b80-8500-4bbe-836e-0bbf38ffecfa-2_77_321_373_1216}
-\end{image}
 \end{hint}
 \end{problem}
 
@@ -135,9 +132,11 @@ than the number.''
 \begin{hint}
 \textbf{Solution.} Dividing by $-2$ reverses the inequality: $x>-5$, that is
 $(-5,\infty)$.
-\begin{image}
-\includegraphics{70708b80-8500-4bbe-836e-0bbf38ffecfa-3_716_727_2030_1022}
-\end{image}
+\figbox{\begin{tikzpicture}[scale=0.42]
+  \draw[axisln,{Stealth[length=4pt]}-{Stealth[length=4pt]}] (-7.4,0) -- (7.4,0);
+  \foreach \v in {-7,...,7} {\draw[axisln] (\v,-0.16) -- (\v,0.16);}
+  \foreach \v in {-6,-4,-2,0,2,4,6} {\node[gl,below] at (\v,-0.25) {$\v$};}
+\end{tikzpicture}}
 \end{hint}
 \end{problem}
 
